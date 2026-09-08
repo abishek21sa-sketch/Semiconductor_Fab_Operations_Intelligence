@@ -274,7 +274,7 @@
   "files": {
     ".env.example": "7d376b2970b0302aa95c477876507239ea0774ea5ccdd874b0d3538f07cef6d7",
     ".github/workflows/ci.yml": "2e367106ff349e0865f27b8e7b008f0c27141d0be58dfc57840eae2b82996250",
-    ".gitignore": "304e0946a3375f6de3d2ec29abdefecfaa59b0f56c72180f93a38e62b9b0d851",
+    ".gitignore": "5df14ae6e92c8b618c668d687250af8c9b7d72323005d537dcf7a917b0613efa",
     "Dockerfile": "fd8b4bf67ef526eaad92be494363aa1f7db7e26e3e75f36f0aa9c24d60bd1869",
     "MANIFEST_RELEASE.json": "ee304e7890b234850562b30ac02f83744bb6df8680f25615f8dc574c8f0a905e",
     "Makefile": "32268600518f456417ed8d79b1b9196115f20d05031c62aa36067c7163ee8b6b",
@@ -368,7 +368,7 @@
     "frontend/index.html": "fde976e55656af550825be5f045897d68faf68f318f4f88008708021eff390ee",
     "intelligence/__init__.py": "4ba39638416d7ab860cb2f7dd2f8517834a5403e4640ca57b31f39814d329f00",
     "intelligence/engine.py": "02e556887c752d1d34532b9b948dbc8a8750dc68a2665f1c20de7b8f31ee9de9",
-    "pyproject.toml": "10333117e8e881bad5a3ef3072d562cff93b931985cdf6eec4ca74457baa6871",
+    "pyproject.toml": "af43b63a6fe68542d192386b69b0ac6074b623f36210806a69a3f1a1fee38c16",
     "scripts/acceptance_windows.ps1": "a1ab66f156a24e33bc665bdb38ab8857df0f5c6e64cc73ab242189a857535843",
     "scripts/build_data_backbone.py": "5b8f55e3c8d193c33a47162a601022740aab578bb3fc97d115127dac1893962a",
     "scripts/build_release.py": "c2f61164d4d4eef1207e5a2ffdb0aee7c9b427f002e8e6b5760d4533e8e9ceb9",
