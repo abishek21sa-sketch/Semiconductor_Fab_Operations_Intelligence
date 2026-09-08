@@ -1,0 +1,137 @@
+{
+  "release": "FLAGSHIP_V7_2",
+  "version": "7.2.0",
+  "status": "PASS",
+  "research_validation": {
+    "evidence_class": "REFERENCE_SYNTHETIC_BENCHMARK",
+    "seed": 117,
+    "replications": 8,
+    "lot_count": 12,
+    "hypothesis": {
+      "null": "RARE-FAB paired mean scenario loss is not lower than capacity-feasible FIFO.",
+      "alternative": "RARE-FAB paired mean scenario loss is lower than capacity-feasible FIFO.",
+      "test": "one-sided paired t-test with common random numbers",
+      "statistic": -57.631594,
+      "p_value": 0.0,
+      "reject_at_0_05": true,
+      "paired_sign_test_p_value": 0.00390625
+    },
+    "paired_comparison": {
+      "rare_mean_loss": 195.2164,
+      "fifo_mean_loss": 267.5392,
+      "mean_improvement": 72.3229,
+      "median_improvement": 72.736,
+      "dominance_rate": 1.0,
+      "rare_cvar90": 230.309,
+      "fifo_cvar90": 312.2014
+    },
+    "risk_neutral_ablation": {
+      "neutral_mean_loss": 195.3428,
+      "risk_aware_mean_loss": 195.2164,
+      "neutral_cvar90": 240.6166,
+      "risk_aware_cvar90": 230.309,
+      "tail_delta_neutral_minus_risk_aware": 10.3076
+    },
+    "sensitivity": [
+      {
+        "alpha": 0.8,
+        "risk_aversion": 0.0,
+        "mean_loss": 187.0381,
+        "cvar_loss": 229.568,
+        "objective": 10.12768,
+        "runtime_s": 0.002537
+      },
+      {
+        "alpha": 0.8,
+        "risk_aversion": 0.2,
+        "mean_loss": 184.4702,
+        "cvar_loss": 216.3027,
+        "objective": 54.07877,
+        "runtime_s": 0.002955
+      },
+      {
+        "alpha": 0.8,
+        "risk_aversion": 0.35,
+        "mean_loss": 184.4702,
+        "cvar_loss": 216.3027,
+        "objective": 86.95772,
+        "runtime_s": 0.002982
+      },
+      {
+        "alpha": 0.8,
+        "risk_aversion": 0.6,
+        "mean_loss": 184.4702,
+        "cvar_loss": 216.3027,
+        "objective": 141.75596,
+        "runtime_s": 0.003009
+      },
+      {
+        "alpha": 0.9,
+        "risk_aversion": 0.0,
+        "mean_loss": 187.0381,
+        "cvar_loss": 237.1324,
+        "objective": 10.12768,
+        "runtime_s": 0.00257
+      },
+      {
+        "alpha": 0.9,
+        "risk_aversion": 0.2,
+        "mean_loss": 184.4702,
+        "cvar_loss": 223.4058,
+        "objective": 56.47033,
+        "runtime_s": 0.002976
+      },
+      {
+        "alpha": 0.9,
+        "risk_aversion": 0.35,
+        "mean_loss": 184.4702,
+        "cvar_loss": 223.4058,
+        "objective": 91.14294,
+        "runtime_s": 0.002963
+      },
+      {
+        "alpha": 0.9,
+        "risk_aversion": 0.6,
+        "mean_loss": 184.4702,
+        "cvar_loss": 223.4058,
+        "objective": 148.93063,
+        "runtime_s": 0.002969
+      },
+      {
+        "alpha": 0.95,
+        "risk_aversion": 0.0,
+        "mean_loss": 187.0381,
+        "cvar_loss": 243.9841,
+        "objective": 10.12768,
+        "runtime_s": 0.002575
+      },
+      {
+        "alpha": 0.95,
+        "risk_aversion": 0.2,
+        "mean_loss": 184.4702,
+        "cvar_loss": 231.1508,
+        "objective": 56.50805,
+        "runtime_s": 0.003099
+      },
+      {
+        "alpha": 0.95,
+        "risk_aversion": 0.35,
+        "mean_loss": 184.4702,
+        "cvar_loss": 231.1508,
+        "objective": 91.20895,
+        "runtime_s": 0.003065
+      },
+      {
+        "alpha": 0.95,
+        "risk_aversion": 0.6,
+        "mean_loss": 184.4702,
+        "cvar_loss": 231.1508,
+        "objective": 149.04379,
+        "runtime_s": 0.003982
+      }
+    ],
+    "mean_solver_runtime_s": 0.011601,
+    "wall_runtime_s": 0.1613,
+    "claim_boundary": "Synthetic MiniFab-inspired decision benchmark only. This evidence does not establish real-fab performance, causal production improvement, site calibration, or methodological novelty."
+  }
+}

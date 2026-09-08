@@ -1,0 +1,105 @@
+{
+  "release": "FLAGSHIP_V6",
+  "version": "6.0.0",
+  "coupled_twin": {
+    "lots": 48,
+    "completed": 24,
+    "event_count": 1420,
+    "avg_cycle_time": 560.908,
+    "p95_cycle_time": 677.456,
+    "queue_time_breaches": 180,
+    "rework_loops": 67,
+    "scrap_lots": 24,
+    "reticle_wait": 788.871,
+    "batch_runs": 149,
+    "mean_batch_fill": 0.242,
+    "pm_interruptions": 7,
+    "tool_failures": 11
+  },
+  "multi_operation_schedule": {
+    "success": true,
+    "lots": 3,
+    "operations": 24,
+    "queue_breaches": 0,
+    "reticle_conflicts": 0,
+    "precedence_violations": 0,
+    "pm_conflicts": 0,
+    "objective": 209.77
+  },
+  "closed_loop_recovery": {
+    "scenario": "PHOTO_OUTAGE",
+    "policy": "HOLD_RELEASE",
+    "cycle_time_recovery": 221.71,
+    "queue_breach_recovery": -2,
+    "rework_recovery": 12,
+    "scrap_recovery": -2,
+    "decision_state": "REVIEW"
+  },
+  "scaling": {
+    "twin_scaling": [
+      {
+        "lots": 24,
+        "mean_cycle_time": 369.037,
+        "mean_queue_breaches": 79,
+        "mean_rework": 37,
+        "mean_runtime_s": 0.0028,
+        "completion_rate": 0.6667
+      },
+      {
+        "lots": 48,
+        "mean_cycle_time": 694.469,
+        "mean_queue_breaches": 180,
+        "mean_rework": 74.67,
+        "mean_runtime_s": 0.0054,
+        "completion_rate": 0.6042
+      },
+      {
+        "lots": 72,
+        "mean_cycle_time": 891.259,
+        "mean_queue_breaches": 290.67,
+        "mean_rework": 106,
+        "mean_runtime_s": 0.0078,
+        "completion_rate": 0.5741
+      },
+      {
+        "lots": 96,
+        "mean_cycle_time": 939.045,
+        "mean_queue_breaches": 339.33,
+        "mean_rework": 152.67,
+        "mean_runtime_s": 0.0091,
+        "completion_rate": 0.2396
+      }
+    ],
+    "schedule_scaling": [
+      {
+        "lots": 2,
+        "operations": 16,
+        "success": true,
+        "runtime_s": 2.6077,
+        "queue_breaches": 0,
+        "reticle_conflicts": 0,
+        "precedence_violations": 0
+      },
+      {
+        "lots": 3,
+        "operations": 24,
+        "success": true,
+        "runtime_s": 5.8916,
+        "queue_breaches": 0,
+        "reticle_conflicts": 0,
+        "precedence_violations": 0
+      },
+      {
+        "lots": 4,
+        "operations": 32,
+        "success": false,
+        "runtime_s": 3.6198,
+        "queue_breaches": 0,
+        "reticle_conflicts": 0,
+        "precedence_violations": 0
+      }
+    ],
+    "claim_boundary": "Reference computational scaling only; not production throughput or capacity evidence."
+  },
+  "claim_boundary": "Reference virtual-fab integration/scaling evidence only; no site performance or production execution claim."
+}

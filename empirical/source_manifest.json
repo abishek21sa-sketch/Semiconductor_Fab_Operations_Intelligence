@@ -1,0 +1,16 @@
+{
+  "project": "Semiconductor Fab Operations Intelligence",
+  "source_provider": "UCI Machine Learning Repository",
+  "source_name": "SECOM",
+  "source_url": "https://archive.ics.uci.edu/dataset/179/secom",
+  "download_url": "https://archive.ics.uci.edu/static/public/179/secom.zip",
+  "doi": "10.24432/C54305",
+  "license": "CC BY 4.0",
+  "advertised": "1,567 production entities \u00d7 591 process measurements; pass/fail yield labels",
+  "entity": "lot / wafer / process signal",
+  "historical": "yield-excursion and process-signal chronology",
+  "case": "SECOM yield-excursion signal triage",
+  "refresh_required_for_real_data": true,
+  "offline_validation_mode": "repository reference evidence + source contract",
+  "provenance_rule": "Never label reference/synthetic fixtures as external observations."
+}

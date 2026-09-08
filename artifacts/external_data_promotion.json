@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "data_mode": "refreshed_external",
+  "source": "SECOM",
+  "profile": {
+    "exists": true,
+    "path": "data\\external\\uci_179.zip",
+    "bytes": 1964989,
+    "sha256": "eea568baf3c2229096d7d294cf0b096b5502bd96d92c0b80a65b84714059be8e",
+    "archive_member": "secom.data",
+    "rows": 1566,
+    "columns": 590,
+    "data_mode": "refreshed_external"
+  },
+  "claim_boundary": "SECOM is public UCI semiconductor process data; TSMC facts are company-level context only. Neither is TSMC lot-level operating data."
+}

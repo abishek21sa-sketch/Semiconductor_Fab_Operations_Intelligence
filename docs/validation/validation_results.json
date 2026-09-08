@@ -1,0 +1,230 @@
+{
+  "release": "v0.9.0",
+  "evidence_boundary": "All quantitative results are generated from the included synthetic MiniFab-inspired benchmark and are not real-fab performance claims.",
+  "reference_run": {
+    "rule": "CR",
+    "throughput": 120,
+    "makespan": 1698.181,
+    "avg_cycle_time": 566.953,
+    "p95_cycle_time": 1041.938,
+    "avg_tardiness": 424.025,
+    "on_time_rate": 0.0333,
+    "avg_wip": 40.063,
+    "bottleneck": {
+      "tool_ranking": [
+        {
+          "tool_id": "ETCH-01",
+          "utilization": 0.8692
+        },
+        {
+          "tool_id": "LITHO-01",
+          "utilization": 0.7361
+        },
+        {
+          "tool_id": "LITHO-02",
+          "utilization": 0.6701
+        },
+        {
+          "tool_id": "DIFF-01",
+          "utilization": 0.6566
+        },
+        {
+          "tool_id": "DIFF-02",
+          "utilization": 0.573
+        },
+        {
+          "tool_id": "MET-01",
+          "utilization": 0.3145
+        }
+      ],
+      "group_utilization": {
+        "ETCH": 0.8692,
+        "LITHO": 0.7031,
+        "DIFF": 0.6148,
+        "MET": 0.3145
+      },
+      "primary_bottleneck": "ETCH-01"
+    },
+    "little_law": {
+      "throughput_rate": 0.070664,
+      "avg_cycle_time": 566.953,
+      "observed_avg_wip": 40.063,
+      "little_law_implied_wip": 40.063,
+      "absolute_gap": 0.0
+    },
+    "operational_risk": {
+      "score": 79.74,
+      "level": "critical",
+      "drivers": [
+        "on_time_delivery",
+        "bottleneck_utilization",
+        "tardiness"
+      ]
+    }
+  },
+  "dispatch_recommendation": {
+    "recommended_rule": "CR",
+    "rationale": [
+      "CR produced the lowest evaluated tardiness/cycle-time objective across 4 reproducible scenarios.",
+      "Versus FIFO: average tardiness 603.39 -> 424.02; average cycle time 744.81 -> 566.95."
+    ],
+    "evidence": {
+      "FIFO": {
+        "avg_tardiness": 603.39,
+        "avg_cycle_time": 744.806,
+        "on_time_rate": 0.025,
+        "avg_wip": 53.836
+      },
+      "EDD": {
+        "avg_tardiness": 447.662,
+        "avg_cycle_time": 588.63,
+        "on_time_rate": 0.0583,
+        "avg_wip": 40.755
+      },
+      "CR": {
+        "avg_tardiness": 424.025,
+        "avg_cycle_time": 566.953,
+        "on_time_rate": 0.0333,
+        "avg_wip": 40.063
+      },
+      "PRIORITY": {
+        "avg_tardiness": 434.017,
+        "avg_cycle_time": 564.572,
+        "on_time_rate": 0.2667,
+        "avg_wip": 39.965
+      }
+    },
+    "confidence": "simulation-backed"
+  },
+  "monte_carlo": {
+    "scenario": {
+      "name": "validation-disruption",
+      "lots": 70,
+      "seed": 19,
+      "interarrival": 5.8,
+      "failure_rate": 0.04,
+      "repair_time": 12,
+      "rule": "CR"
+    },
+    "replications": 12,
+    "metrics": {
+      "avg_cycle_time": {
+        "mean": 353.237,
+        "std": 38.405,
+        "p05": 299.373,
+        "p95": 403.96
+      },
+      "avg_tardiness": {
+        "mean": 213.421,
+        "std": 37.843,
+        "p05": 159.97,
+        "p95": 261.354
+      },
+      "on_time_rate": {
+        "mean": 0.105,
+        "std": 0.035,
+        "p05": 0.065,
+        "p95": 0.157
+      },
+      "avg_wip": {
+        "mean": 23.309,
+        "std": 2.169,
+        "p05": 20.519,
+        "p95": 26.626
+      },
+      "makespan": {
+        "mean": 1060.157,
+        "std": 51.374,
+        "p05": 986.662,
+        "p95": 1126.4
+      }
+    },
+    "bottleneck_frequency": {
+      "ETCH-01": 12
+    }
+  },
+  "predictive_models": {
+    "cycle_time": {
+      "metrics": {
+        "mae": 48.078,
+        "r2": 0.593,
+        "train_n": 300,
+        "test_n": 100,
+        "estimator": "standardized_ols_numpy",
+        "windows_stable": true
+      },
+      "feature_importance": {
+        "priority": 0.0608,
+        "release_time": 0.5781,
+        "due_window": 0.2815,
+        "product_p2": 0.0795
+      }
+    },
+    "eta": {
+      "metrics": {
+        "mae": 3.303,
+        "naive_mae": 160.419,
+        "train_n": 288,
+        "test_n": 112,
+        "validation": "grouped_holdout",
+        "estimator": "standardized_ols_numpy",
+        "windows_stable": true
+      }
+    },
+    "bottleneck": {
+      "metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "train_n": 27,
+        "test_n": 9,
+        "estimator": "nearest_centroid_numpy",
+        "windows_stable": true
+      }
+    }
+  },
+  "state_reconstruction": {
+    "canonical_events": 1560,
+    "lots": 120,
+    "tools": 6,
+    "wip": 0,
+    "anomalies": []
+  },
+  "optimization": {
+    "parallel_tool_assignment": {
+      "success": true,
+      "objective": 15.07,
+      "assignments": [
+        {
+          "job_id": "J1",
+          "tool_id": "LITHO-01",
+          "process_time": 9
+        },
+        {
+          "job_id": "J2",
+          "tool_id": "LITHO-01",
+          "process_time": 6
+        },
+        {
+          "job_id": "J3",
+          "tool_id": "LITHO-02",
+          "process_time": 7
+        }
+      ],
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    "release_control": {
+      "success": true,
+      "selected_lots": [
+        "HOT-1",
+        "STD-2"
+      ],
+      "total_weight": 15.0,
+      "total_load": {
+        "DIFF": 13.0,
+        "ETCH": 8.0,
+        "LITHO": 13.0
+      },
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    }
+  }
+}

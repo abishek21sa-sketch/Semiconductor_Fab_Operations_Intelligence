@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "project": "Semiconductor Fab Operations Intelligence",
+  "ui_identity": "fab command center / tool-lot topology",
+  "ui_namespace": "fab-",
+  "workspaces": 35,
+  "checks": {
+    "signature_marker": true,
+    "namespace_depth": true,
+    "workspace_depth": true,
+    "workspace_count_matches": true,
+    "ml_lifecycle_visible": true,
+    "agent_planning_visible": true,
+    "empirical_provenance_visible": true
+  }
+}

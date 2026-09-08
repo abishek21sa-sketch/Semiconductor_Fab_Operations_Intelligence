@@ -1,0 +1,68 @@
+{
+  "release": "FLAGSHIP_V5",
+  "version": "5.0.0",
+  "windows_hardening": {
+    "predictive_estimators": [
+      "standardized_ols_numpy",
+      "standardized_ols_numpy",
+      "nearest_centroid_numpy"
+    ],
+    "sklearn_runtime_dependency": false
+  },
+  "chamber_engine": {
+    "chambers": 27,
+    "down": 1,
+    "busy": 11
+  },
+  "batching": {
+    "batches": 2,
+    "mean_fill_rate": 1.0,
+    "max_batch_size": 6
+  },
+  "reticle_contention": {
+    "requests": 3,
+    "conflicts_detected": 1,
+    "max_wait": 2.0
+  },
+  "integrated_schedule": {
+    "success": true,
+    "jobs": 12,
+    "queue_breaches": 0,
+    "reticle_conflicts": 0,
+    "objective": 64.85
+  },
+  "stochastic_recovery": {
+    "action": "BALANCED_RECOVERY",
+    "expected_loss": 91.1,
+    "cvar": 98.85,
+    "risk_aversion": 0.45
+  },
+  "predictive_models": {
+    "cycle_time": {
+      "mae": 48.078,
+      "r2": 0.593,
+      "train_n": 300,
+      "test_n": 100,
+      "estimator": "standardized_ols_numpy",
+      "windows_stable": true
+    },
+    "eta": {
+      "mae": 3.303,
+      "naive_mae": 160.419,
+      "train_n": 288,
+      "test_n": 112,
+      "validation": "grouped_holdout",
+      "estimator": "standardized_ols_numpy",
+      "windows_stable": true
+    },
+    "bottleneck": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "train_n": 27,
+      "test_n": 9,
+      "estimator": "nearest_centroid_numpy",
+      "windows_stable": true
+    }
+  },
+  "claim_boundary": "Reference virtual-fab validation; no site-calibrated performance, production execution, or realized-impact claim."
+}

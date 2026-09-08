@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "project": "Semiconductor Fab Operations Intelligence",
+  "visual_identity": "fab command center / tool-lot topology",
+  "native_entrypoint": "frontend/index.html",
+  "shared_behavioral_contract": [
+    "input",
+    "evidence",
+    "decision",
+    "counterfactual",
+    "human approval"
+  ],
+  "project_specific_flow": [
+    "inspect lot and tool state",
+    "simulate queue and hazard risk",
+    "run CVaR release schedule",
+    "stress the fab scenario",
+    "shift supervisor approves release"
+  ],
+  "not_shared": [
+    "theme",
+    "layout",
+    "domain vocabulary",
+    "visualization type"
+  ],
+  "signature_endpoint": "/governance/signature"
+}

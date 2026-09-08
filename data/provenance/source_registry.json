@@ -1,0 +1,13 @@
+[
+  {
+    "project": "Semiconductor Fab Operations Intelligence",
+    "company_context": "TSMC",
+    "primary_dataset": "UCI SECOM",
+    "dataset_id": 179,
+    "instances": 1567,
+    "features": 591,
+    "license": "CC BY 4.0",
+    "company_public_file": "company_public/tsmc_2025_manufacturing_scale.csv",
+    "intended_use": "Yield-excursion prediction, sensor importance, feature selection; TSMC public scale used only for real-world context and capacity-scale calibration, not lot-level claims."
+  }
+]

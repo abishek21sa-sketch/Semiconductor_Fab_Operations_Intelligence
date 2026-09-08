@@ -1,0 +1,21 @@
+{
+  "release": "FLAGSHIP_V7_1",
+  "version": "7.1.0",
+  "development_tests": {
+    "count": 86,
+    "status": "PASS"
+  },
+  "windows_functional_acceptance": "PASS",
+  "v7_validation": "PASS",
+  "capabilities": [
+    "canonical_manufacturing_events",
+    "synthetic_mes_replay",
+    "state_reconstruction",
+    "wafer_genealogy",
+    "equipment_digital_thread",
+    "shewhart",
+    "ewma",
+    "cusum"
+  ],
+  "evidence_boundary": "Reference/synthetic manufacturing data fabric; no live fab connection claim."
+}

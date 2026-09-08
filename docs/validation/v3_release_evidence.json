@@ -1,0 +1,14 @@
+{
+  "release": "3.0.0",
+  "tests": "51 passed",
+  "http_smoke": [
+    "/",
+    "/health",
+    "/v3/mission-control",
+    "/v3/fab-map",
+    "/v3/demo-schedule",
+    "/research/rare-fab-benchmark"
+  ],
+  "v3_validation": "docs/validation/v3_validation.json",
+  "claim_boundary": "Reference virtual-fab evidence only; production_validated=false."
+}

@@ -1,0 +1,90 @@
+{
+  "autonomous_execution": false,
+  "case_study": {
+    "context_profile": {
+      "bytes": 543,
+      "features": 5,
+      "missing_fraction": 0.0,
+      "path": "data\\snapshots\\tsmc_2025_manufacturing_scale.csv",
+      "rows": 8,
+      "sha256": "46e4aa441381ca0a984dc49a370df2fcadc19de4f4f11308bce380751b2133fa"
+    },
+    "decision_impact": "SECOM yield-excursion risk is promoted as an evidence prior into QSHIFT review; queue-time hazard remains a separate survival model because SECOM has no queue-time survival labels.",
+    "name": "SECOM Yield Excursion / Queue-Risk Investigation",
+    "primary_dataset": "UCI SECOM",
+    "qshift_excursion_prior": 0.6928592874609797,
+    "status": "ACTIVE",
+    "yield_excursion_model": {
+      "fail_or_positive_rate": 0.06641123882503193,
+      "holdout": {
+        "auc": 0.6929952868519421,
+        "balanced_accuracy": 0.5948317893710385,
+        "brier": 0.20862156778852406,
+        "rows": 314
+      },
+      "model_family": "repository-authored class-balanced logistic diagnostic model (auxiliary; not headline ML family)",
+      "rows": 1566,
+      "selected_features": [
+        "-5419",
+        "-1.7264",
+        "1.773",
+        "64.2333",
+        "2916.5",
+        "0.9317",
+        "0.8955",
+        "4.7057",
+        "7.9558",
+        "3.049",
+        "86.9555",
+        "3.5191"
+      ],
+      "status": "MODEL_ACTIVE",
+      "target": "-1",
+      "top_decile_risk": 0.6928592874609797
+    }
+  },
+  "claim_boundary": "SECOM is public UCI semiconductor process data; TSMC facts are company-level context only. Neither is TSMC lot-level operating data.",
+  "current_model_version": "public-data-backbone-1.0",
+  "dataset": "UCI SECOM",
+  "dataset_state": "REFRESHED_EXTERNAL_ACTIVE",
+  "generated_at_utc": "2026-09-07T03:49:02.250198+00:00",
+  "human_authority": "FAB_SHIFT_SUPERVISOR",
+  "layers": {
+    "contracts": "data/contracts",
+    "dictionaries": "data/dictionaries",
+    "processed": "data/processed",
+    "provenance": "data/provenance",
+    "raw": "data/raw",
+    "snapshots": "data/snapshots"
+  },
+  "primary_files": [
+    {
+      "bytes": 5389983,
+      "features": 590,
+      "missing_fraction": 0.007415,
+      "path": "data\\raw\\uci_secom\\features.csv",
+      "rows": 1566,
+      "sha256": "9d0c7b7f624d1651b8e37fe1acb3d0bfe02468c2980a211b60cc5784e4ca396f"
+    },
+    {
+      "bytes": 46906,
+      "features": 2,
+      "missing_fraction": 0.0,
+      "path": "data\\raw\\uci_secom\\targets.csv",
+      "rows": 1566,
+      "sha256": "fc66124466bfea7b02e9df25c3308f0d43b5008a478d692c0475c7b9dcb18bce"
+    }
+  ],
+  "project": "Semiconductor Fab Operations Intelligence",
+  "schema_validation": "PASS",
+  "static_context_files": [
+    {
+      "bytes": 543,
+      "features": 5,
+      "missing_fraction": 0.0,
+      "path": "data\\snapshots\\tsmc_2025_manufacturing_scale.csv",
+      "rows": 8,
+      "sha256": "46e4aa441381ca0a984dc49a370df2fcadc19de4f4f11308bce380751b2133fa"
+    }
+  ]
+}

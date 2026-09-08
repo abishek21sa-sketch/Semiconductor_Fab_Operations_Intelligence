@@ -1,0 +1,27 @@
+{
+  "release": "FLAGSHIP_V7_2",
+  "version": "7.2.0",
+  "stage": "PORTFOLIO_RC1",
+  "container_regression": {
+    "tests": 89,
+    "status": "PASS",
+    "execution_note": "Suite executed in two groups; V6 scaling contract included."
+  },
+  "portfolio_research_validation": "PASS",
+  "windows_revalidation_required": true,
+  "promotion_gate": "Run scripts/acceptance_windows.ps1 from a clean Windows extraction and require FLAGSHIP_V7_2_ACCEPTANCE=PASS.",
+  "capabilities": [
+    "reentrant_coupled_digital_twin",
+    "queue_time_and_rework_feedback",
+    "reticle_pm_batch_constraints",
+    "multi_operation_milp",
+    "rare_fab_cvar_release_control",
+    "closed_loop_recovery",
+    "manufacturing_data_fabric",
+    "wafer_genealogy",
+    "spc_process_health",
+    "lot_passport_and_human_gated_decision_synthesis",
+    "hypothesis_ablation_sensitivity_validation"
+  ],
+  "evidence_boundary": "Synthetic/reference manufacturing evidence; no live fab or production-performance claim."
+}

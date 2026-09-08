@@ -1,0 +1,41 @@
+{
+  "release": "FLAGSHIP_V6",
+  "version": "6.0.0",
+  "development_tests": {
+    "pytest": 78,
+    "status": "PASS"
+  },
+  "windows_acceptance": {
+    "official_gate": "scripts/windows_functional_acceptance.py",
+    "status": "PASS",
+    "pytest_separated_from_official_evidence": true
+  },
+  "validation_scripts": {
+    "run_validation.py": "PASS",
+    "run_flagship_validation.py": "PASS",
+    "run_v3_validation.py": "PASS",
+    "run_v4_validation.py": "PASS",
+    "run_v5_validation.py": "PASS",
+    "run_v6_validation.py": "PASS"
+  },
+  "http_smoke": [
+    "/",
+    "/health",
+    "/v6/platform",
+    "/v6/coupled-twin/demo",
+    "/v6/multi-operation-schedule/demo"
+  ],
+  "v6_capabilities": [
+    "coupled_virtual_fab",
+    "batching",
+    "chamber_state",
+    "reticle_contention",
+    "pm_blackouts",
+    "queue_time_yield_coupling",
+    "rework_feedback",
+    "multi_operation_milp",
+    "closed_loop_recovery",
+    "scaling_experiments"
+  ],
+  "evidence_boundary": "Reference/synthetic virtual-fab evidence only; no site performance, production execution, or realized-impact claim."
+}

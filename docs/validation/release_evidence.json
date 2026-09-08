@@ -1,0 +1,98 @@
+{
+  "release": "v0.9.0",
+  "python": "3.13.5",
+  "tests_collected": 28,
+  "test_command": "python -m pytest",
+  "validation_command": "python scripts/run_validation.py",
+  "compile_command": "python -m compileall -q src scripts",
+  "reference_run": {
+    "rule": "CR",
+    "throughput": 120,
+    "makespan": 1698.181,
+    "avg_cycle_time": 566.953,
+    "p95_cycle_time": 1041.938,
+    "avg_tardiness": 424.025,
+    "on_time_rate": 0.0333,
+    "avg_wip": 40.063,
+    "bottleneck": {
+      "tool_ranking": [
+        {
+          "tool_id": "ETCH-01",
+          "utilization": 0.8692
+        },
+        {
+          "tool_id": "LITHO-01",
+          "utilization": 0.7361
+        },
+        {
+          "tool_id": "LITHO-02",
+          "utilization": 0.6701
+        },
+        {
+          "tool_id": "DIFF-01",
+          "utilization": 0.6566
+        },
+        {
+          "tool_id": "DIFF-02",
+          "utilization": 0.573
+        },
+        {
+          "tool_id": "MET-01",
+          "utilization": 0.3145
+        }
+      ],
+      "group_utilization": {
+        "ETCH": 0.8692,
+        "LITHO": 0.7031,
+        "DIFF": 0.6148,
+        "MET": 0.3145
+      },
+      "primary_bottleneck": "ETCH-01"
+    },
+    "little_law": {
+      "throughput_rate": 0.070664,
+      "avg_cycle_time": 566.953,
+      "observed_avg_wip": 40.063,
+      "little_law_implied_wip": 40.063,
+      "absolute_gap": 0.0
+    },
+    "operational_risk": {
+      "score": 79.74,
+      "level": "critical",
+      "drivers": [
+        "on_time_delivery",
+        "bottleneck_utilization",
+        "tardiness"
+      ]
+    }
+  },
+  "predictive_metrics": {
+    "cycle_time": {
+      "mae": 44.527,
+      "r2": 0.66,
+      "train_n": 300,
+      "test_n": 100
+    },
+    "eta": {
+      "mae": 10.545,
+      "naive_mae": 182.471,
+      "train_n": 288,
+      "test_n": 112,
+      "validation": "grouped_holdout"
+    },
+    "bottleneck": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "train_n": 27,
+      "test_n": 9
+    }
+  },
+  "state_reconstruction": {
+    "canonical_events": 1560,
+    "lots": 120,
+    "tools": 6,
+    "wip": 0,
+    "anomalies": []
+  },
+  "evidence_boundary": "All quantitative results are generated from the included synthetic MiniFab-inspired benchmark and are not real-fab performance claims."
+}

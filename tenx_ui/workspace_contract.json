@@ -1,0 +1,466 @@
+{
+  "actor": "Fab Operations Supervisor",
+  "decision": "lot release / dispatch / recovery policy",
+  "entity": "lot / tool / queue / reticle",
+  "workspaces": [
+    {
+      "workspace": "Mission Control",
+      "engineering_question": "What does Mission Control show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Fab-wide decision queue combining WIP, queue-time, tool state, yield and disruption risk",
+      "evidence": "Evidence object: Fab-wide decision queue combining WIP, queue-time, tool state, yield and disruption risk; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable mission control evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Mission Control evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Fab Topology",
+      "engineering_question": "What does Fab Topology show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Re-entrant route/tool-group topology and capacity/qualification constraint visualization",
+      "evidence": "Evidence object: Re-entrant route/tool-group topology and capacity/qualification constraint visualization; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable fab topology evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Fab Topology evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Lot Control",
+      "engineering_question": "What does Lot Control show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Lot priority, due-date, hold/release and route-state management",
+      "evidence": "Evidence object: Lot priority, due-date, hold/release and route-state management; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable lot control evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Lot Control evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Queue-Time Risk",
+      "engineering_question": "What does Queue-Time Risk show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Queue-time slack, breach hazard and downstream process-window risk analysis",
+      "evidence": "Evidence object: Queue-time slack, breach hazard and downstream process-window risk analysis; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable queue-time risk evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Queue-Time Risk evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "QSHIFT Triage",
+      "engineering_question": "What does QSHIFT Triage show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Queue-slack hazard integrated triage with starvation protection and naive-rule challenge",
+      "evidence": "Evidence object: Queue-slack hazard integrated triage with starvation protection and naive-rule challenge; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable qshift triage evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the QSHIFT Triage evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "RARE-FAB Scheduler",
+      "engineering_question": "What does RARE-FAB Scheduler show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Scenario-aware mixed-integer release/scheduling optimization with CVaR tail-risk term",
+      "evidence": "Evidence object: Scenario-aware mixed-integer release/scheduling optimization with CVaR tail-risk term; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable rare-fab scheduler evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the RARE-FAB Scheduler evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Dispatch Policy",
+      "engineering_question": "What does Dispatch Policy show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Dispatch-rule comparison and policy selection under current WIP/tool constraints",
+      "evidence": "Evidence object: Dispatch-rule comparison and policy selection under current WIP/tool constraints; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable dispatch policy evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Dispatch Policy evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Tool & PM Control",
+      "engineering_question": "What does Tool & PM Control show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Tool availability, qualification and preventive-maintenance conflict analysis",
+      "evidence": "Evidence object: Tool availability, qualification and preventive-maintenance conflict analysis; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable tool & pm control evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Tool & PM Control evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Reticle Control",
+      "engineering_question": "What does Reticle Control show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Reticle sharing/conflict constraints across photolithography operations",
+      "evidence": "Evidence object: Reticle sharing/conflict constraints across photolithography operations; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable reticle control evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Reticle Control evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "AMHS Network",
+      "engineering_question": "What does AMHS Network show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Material-handling travel/availability exposure integrated with release decisions",
+      "evidence": "Evidence object: Material-handling travel/availability exposure integrated with release decisions; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable amhs network evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the AMHS Network evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Yield & Rework",
+      "engineering_question": "What does Yield & Rework show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Yield-loss, rework-loop and scrap exposure linked to lot/process history",
+      "evidence": "Evidence object: Yield-loss, rework-loop and scrap exposure linked to lot/process history; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable yield & rework evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Yield & Rework evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Chamber Batching",
+      "engineering_question": "What does Chamber Batching show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Compatible batch formation under recipe, chamber and timing constraints",
+      "evidence": "Evidence object: Compatible batch formation under recipe, chamber and timing constraints; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable chamber batching evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Chamber Batching evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Coupled Digital Twin",
+      "engineering_question": "What does Coupled Digital Twin show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Discrete-event fab simulation coupling lot flow, batching, queues and equipment state",
+      "evidence": "Evidence object: Discrete-event fab simulation coupling lot flow, batching, queues and equipment state; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable coupled digital twin evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Coupled Digital Twin evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Closed-Loop Recovery",
+      "engineering_question": "What does Closed-Loop Recovery show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Disruption detection \u2192 policy action \u2192 twin replay \u2192 recovery-state evaluation",
+      "evidence": "Evidence object: Disruption detection \u2192 policy action \u2192 twin replay \u2192 recovery-state evaluation; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable closed-loop recovery evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Closed-Loop Recovery evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Hazard Learning",
+      "engineering_question": "What does Hazard Learning show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Cox proportional-hazards breach/disruption prediction with holdout evidence",
+      "evidence": "Evidence object: Cox proportional-hazards breach/disruption prediction with holdout evidence; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable hazard learning evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Hazard Learning evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Stress Laboratory",
+      "engineering_question": "What does Stress Laboratory show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Scenario/Monte Carlo stress tests over outages, congestion and demand/load changes",
+      "evidence": "Evidence object: Scenario/Monte Carlo stress tests over outages, congestion and demand/load changes; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable stress laboratory evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Stress Laboratory evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Decision Center",
+      "engineering_question": "What does Decision Center show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Evidence-ranked lot/tool/policy decisions with risk, feasibility and operator authority",
+      "evidence": "Evidence object: Evidence-ranked lot/tool/policy decisions with risk, feasibility and operator authority; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable decision center evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Decision Center evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "AI Shift Engineer",
+      "engineering_question": "What does AI Shift Engineer show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Tool-using shift planner combining hazard prediction, QSHIFT, RARE-FAB and twin evidence",
+      "evidence": "Evidence object: Tool-using shift planner combining hazard prediction, QSHIFT, RARE-FAB and twin evidence; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable ai shift engineer evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the AI Shift Engineer evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Experiment Manager",
+      "engineering_question": "What does Experiment Manager show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Controlled policy experiment configuration, baseline, metrics and evidence capture",
+      "evidence": "Evidence object: Controlled policy experiment configuration, baseline, metrics and evidence capture; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable experiment manager evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Experiment Manager evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Data Fabric",
+      "engineering_question": "What does Data Fabric show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Event/lot/wafer/tool genealogy, schema quality and provenance pipeline",
+      "evidence": "Evidence object: Event/lot/wafer/tool genealogy, schema quality and provenance pipeline; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable data fabric evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Data Fabric evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Research Evidence",
+      "engineering_question": "What does Research Evidence show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "FIFO/risk-neutral ablations, paired tests, sensitivity and claim boundaries",
+      "evidence": "Evidence object: FIFO/risk-neutral ablations, paired tests, sensitivity and claim boundaries; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable research evidence evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Research Evidence evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Release Review",
+      "engineering_question": "What does Release Review show that would change the lot release / dispatch / recovery policy for the current lot / tool / queue / reticle scope?",
+      "method": "Supervisor approval gate with tamper-evident certificate and autonomous-execution block",
+      "evidence": "Evidence object: Supervisor approval gate with tamper-evident certificate and autonomous-execution block; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable release review evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Release Review evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Data Backbone",
+      "engineering_question": "Can the lot release / dispatch / recovery decision be traced to a reproducible external source rather than only a demo fixture?",
+      "method": "SECOM source contract plus local validation-history provenance and refresh state",
+      "evidence": "Evidence object: SECOM source contract plus local validation-history provenance and refresh state, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable data backbone evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Data Backbone evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Historical Intelligence",
+      "engineering_question": "How has yield-excursion and process-signal chronology changed across cohorts, runs or states?",
+      "method": "Lot/queue/disruption/yield chronology and risk-regime comparison",
+      "evidence": "Evidence object: Lot/queue/disruption/yield chronology and risk-regime comparison, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable historical intelligence evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Historical Intelligence evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Entity / Factor Explorer",
+      "engineering_question": "Which lot / wafer / process signal carries the highest evidence concentration?",
+      "method": "Lot, tool, queue, reticle and process-signal ranking by risk contribution",
+      "evidence": "Evidence object: Lot, tool, queue, reticle and process-signal ranking by risk contribution, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable entity / factor explorer evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Entity / Factor Explorer evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Empirical Case Study",
+      "engineering_question": "Which process signals should be escalated before yield loss propagates?",
+      "method": "SECOM yield-excursion triage linked to fab risk and release-control reasoning",
+      "evidence": "Evidence object: SECOM yield-excursion triage linked to fab risk and release-control reasoning, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable empirical case study evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Empirical Case Study evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "External Validation",
+      "engineering_question": "Where do queue-time risk and yield-excursion evidence disagree?",
+      "method": "SECOM refresh and transfer checks for hazard/signal triage before real-fab claims",
+      "evidence": "Evidence object: SECOM refresh and transfer checks for hazard/signal triage before real-fab claims, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable external validation evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the External Validation evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Data Refresh",
+      "engineering_question": "Is the current analytical state fresh enough to support the lot release / dispatch / recovery decision?",
+      "method": "Versioned SECOM refresh, checksum, schema drift and model/OR revalidation",
+      "evidence": "Evidence object: Versioned SECOM refresh, checksum, schema drift and model/OR revalidation, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "lot / tool / queue / reticle",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable data refresh evidence for lot release / dispatch / recovery policy",
+      "operator_action": "Fab Operations Supervisor reviews the Data Refresh evidence, drills into the responsible lot / tool / queue / reticle, then approves, holds or escalates the lot release / dispatch / recovery policy."
+    },
+    {
+      "workspace": "Shift Campaign",
+      "engineering_question": "How stable is the release/dispatch decision across plausible fab-state realizations?",
+      "method": "Multi-seed rolling-horizon replay of hazard prediction, QSHIFT triage and downstream RARE-FAB escalation",
+      "evidence": "Scenario-by-scenario lot priority, modal release choice, ranking entropy and tail-risk evidence",
+      "required_inputs": [
+        "lot / tool / queue state",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable shift campaign evidence for lot release / dispatch recovery decision",
+      "operator_action": "Approve the stable release queue or send unstable priorities to supervisor review."
+    },
+    {
+      "workspace": "Tool-Outage War Room",
+      "engineering_question": "Which release priorities remain defensible when a qualified tool family is disrupted?",
+      "method": "Contingency replay with lot-priority stability and tail-risk recovery checks",
+      "evidence": "Priority persistence, disruption-sensitive lots and modeled CVaR recovery signal",
+      "required_inputs": [
+        "lot / tool / queue state",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable tool-outage war room evidence for lot release / dispatch recovery decision",
+      "operator_action": "HOLD affected releases, protect queue-time-critical lots and escalate recovery scheduling."
+    },
+    {
+      "workspace": "Recovery Frontier",
+      "engineering_question": "What is the tradeoff between mean fab loss and tail-risk recovery?",
+      "method": "Reference FIFO/risk-neutral/risk-aware frontier comparison using current validation evidence",
+      "evidence": "Mean-loss improvement, CVaR90 reduction and tail-loss gain versus risk-neutral control",
+      "required_inputs": [
+        "lot / tool / queue state",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable recovery frontier evidence for lot release / dispatch recovery decision",
+      "operator_action": "Choose the risk-aversion region to send into RARE-FAB review."
+    },
+    {
+      "workspace": "Policy Stability",
+      "engineering_question": "Does QSHIFT repeatedly choose the same urgent lot or is the policy state-sensitive?",
+      "method": "Empirical ranking entropy and modal-choice frequency across seeded fab states",
+      "evidence": "Modal release share, ranking entropy and scenario decision matrix",
+      "required_inputs": [
+        "lot / tool / queue state",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable policy stability evidence for lot release / dispatch recovery decision",
+      "operator_action": "Require human review when dispatch stability falls below the campaign threshold."
+    },
+    {
+      "workspace": "Supervisor Action Queue",
+      "engineering_question": "What should the fab supervisor do next, in order?",
+      "method": "Constraint-aware action sequencing from campaign state, risk evidence and human authority",
+      "evidence": "Ordered HOLD/release/investigate/recompute actions with evidence references",
+      "required_inputs": [
+        "lot / tool / queue state",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable supervisor action queue evidence for lot release / dispatch recovery decision",
+      "operator_action": "Execute only approved actions and record the supervisor disposition."
+    },
+    {
+      "workspace": "Shift Decision Record",
+      "engineering_question": "Can the entire shift recommendation be reproduced and audited?",
+      "method": "Deterministic campaign dossier with scenario seeds, model validation, original algorithm and empirical provenance",
+      "evidence": "Campaign state, decision matrix, metric summary, limitations and authority boundary",
+      "required_inputs": [
+        "lot / tool / queue state",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable shift decision record evidence for lot release / dispatch recovery decision",
+      "operator_action": "Sign, export or reject the shift decision record before operational use."
+    },
+    {
+      "workspace": "SECOM Data Backbone",
+      "engineering_question": "Is the public semiconductor evidence current, valid and strong enough to influence the current fab risk review?",
+      "method": "SECOM schema/missingness/hash validation + TSMC public-scale context + yield-excursion diagnostic promotion",
+      "evidence": "Source URI, acquisition state, row/feature count, missingness, class balance, SHA-256, auxiliary yield-risk validation and current Cox/QSHIFT evidence gate.",
+      "required_inputs": [
+        "validated public source/provenance",
+        "raw/canonical hash and schema state",
+        "current model/algorithm readiness"
+      ],
+      "decision_output": "Auditable secom data backbone evidence",
+      "operator_action": "Fab Shift Supervisor may use the evidence to prioritize investigation, but must HOLD real-data claims until SECOM acquisition is active."
+    }
+  ],
+  "project_title": "Semiconductor Fab Operations Intelligence",
+  "campaign": "Rolling-Horizon Fab Campaign",
+  "campaign_identity": "ranking entropy + tail-risk recovery frontier",
+  "depth_phase": "PROJECT_NATIVE_1P2_EXPANSION"
+}

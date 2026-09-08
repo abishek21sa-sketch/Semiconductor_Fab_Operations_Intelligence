@@ -1,0 +1,8 @@
+{
+  "project": "Semiconductor Fab Operations Intelligence",
+  "ui_namespace": "fab-",
+  "signature_marker": "FABOPS // SHIFT CONTROL",
+  "workspace_count": 35,
+  "max_allowed_pairwise_similarity": 0.2,
+  "product_identity": "fab command center / tool-lot topology"
+}

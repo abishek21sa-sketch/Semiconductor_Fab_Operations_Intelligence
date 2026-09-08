@@ -1,0 +1,83 @@
+{
+  "project": "Semiconductor Fab Operations Intelligence",
+  "release_stage": "PORTFOLIO_PUBLIC_DATA_RELEASE_CANDIDATE",
+  "platform": "Windows-first",
+  "workspaces": 34,
+  "original_algorithm": "QSHIFT-v1",
+  "predictive_ml_family": "Cox proportional-hazards survival learning",
+  "decision_campaign": "Rolling-Horizon Fab Campaign",
+  "campaign_identity": "ranking entropy + tail-risk recovery frontier",
+  "data_mode": "offline_reference",
+  "empirical_promotion": "REFERENCE_ONLY",
+  "human_authority": "FAB_SHIFT_SUPERVISOR",
+  "autonomous_execution": false,
+  "evidence_inventory": [
+    {
+      "path": "artifacts/tenx_validation.json",
+      "sha256": "7f8383ee577cce55b13f5cbae205fad4038d4775104969978e96a0ab647533f0"
+    },
+    {
+      "path": "artifacts/tenx_stress.json",
+      "sha256": "e7d27371d071a81d16f5a0ef66f307b6fb9740196a846ae85e820547b46551d6"
+    },
+    {
+      "path": "artifacts/airlines15x_validation.json",
+      "sha256": "bbf4522a592d7f9fed4b62e139da27534240779132de1cbead2ccd3e7f4f38c7"
+    },
+    {
+      "path": "artifacts/final_depth_validation.json",
+      "sha256": "4c4dc233aee123b78193e8a4945bda889b059737225d45e9888d98c8b8ba5d68"
+    },
+    {
+      "path": "artifacts/intelligence_validation.json",
+      "sha256": "95a97d6b8d65cca12ad928bad3e2eb5b73e1c9e243b023347844bc5ffba6e686"
+    },
+    {
+      "path": "artifacts/ui_identity_validation.json",
+      "sha256": "7d21e46b15a7b3c2322905f93c2df056603c5881f169963fe367e70807a7d615"
+    },
+    {
+      "path": "artifacts/frontend_diversity.json",
+      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
+    },
+    {
+      "path": "artifacts/governance_standard_validation.json",
+      "sha256": "0c11c8e5f8534306fa851bccddc19a5339ab2267df297976fed6c9756f65b825"
+    },
+    {
+      "path": "PROJECT_METADATA.json",
+      "sha256": "aeecbca49cdb622afa6c39f69ff685b534baf79eed6bc1bc640e41e96fd9d197"
+    },
+    {
+      "path": "docs/FRONTEND_DEMO_FLOW.md",
+      "sha256": "c051f4fb4a97707caf9bd963409d56f929f35c23197accd0ac3a850a0d23a388"
+    },
+    {
+      "path": "artifacts/fortune50_capability_benchmark.json",
+      "sha256": "dd8356f3341ba680495f97befa3e73a6ef32cac3c145b992d68d26aeefac0dbc"
+    },
+    {
+      "path": "artifacts/enterprise_hardening.json",
+      "sha256": "06f483f37d31cc9f65b91dcb499a7642f54c2553cda09b2f52022f6575215c2b"
+    },
+    {
+      "path": "artifacts/frontend_demo_flow.json",
+      "sha256": "8f0d3c27f933a1898593460e7e7938577227fae3d7cede9991a99a9c3b5e3192"
+    },
+    {
+      "path": "src/fabops/api/app.py",
+      "sha256": "f7cd98f77a71e6a41c15895538577da7694ed2d01dc5ecdf26bb27095b9c5c1a"
+    }
+  ],
+  "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",
+  "product_ui_identity": "fab command center / tool-lot topology",
+  "ai_agent": "Fab Shift Intelligence Agent",
+  "agent_decision_policy": "hazard-driven dispatch and release control",
+  "ml_lifecycle_endpoint": "/api/ml/lifecycle",
+  "agent_endpoint": "/api/agent/run",
+  "frontend_similarity_method": "5-token Jaccard after removing embedded workspace contract payload",
+  "max_pairwise_frontend_similarity": 0.1321,
+  "frontend_similarity_threshold": 0.2,
+  "data_backbone": "structured public data contracts + provenance + claim ledger + project-specific empirical case",
+  "claim_ledger": "data/provenance/CLAIM_LEDGER.md"
+}

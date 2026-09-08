@@ -1,0 +1,56 @@
+{
+  "release": "FLAGSHIP_V7_2",
+  "version": "7.2.0",
+  "status": "PASS",
+  "lot": {
+    "lot_id": "V72-LOT-001",
+    "completed_steps": 14,
+    "risk": {
+      "score": 63.8,
+      "level": "MEDIUM",
+      "drivers": [
+        {
+          "factor": "yield_risk",
+          "impact": 72
+        },
+        {
+          "factor": "queue_pressure",
+          "impact": 65
+        },
+        {
+          "factor": "delivery_risk",
+          "impact": 61
+        },
+        {
+          "factor": "equipment_risk",
+          "impact": 55
+        }
+      ]
+    },
+    "recommendation": "CONTINUE_MONITORING"
+  },
+  "decision": {
+    "agent": "decision_synthesizer",
+    "lot": "V72-LOT-001",
+    "recommendation": "MONITOR",
+    "evidence": [
+      {
+        "factor": "yield_risk",
+        "impact": 72
+      },
+      {
+        "factor": "queue_pressure",
+        "impact": 65
+      },
+      {
+        "factor": "delivery_risk",
+        "impact": 61
+      },
+      {
+        "factor": "equipment_risk",
+        "impact": 55
+      }
+    ],
+    "human_gate": true
+  }
+}

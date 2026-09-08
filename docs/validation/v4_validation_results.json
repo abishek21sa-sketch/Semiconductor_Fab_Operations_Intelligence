@@ -1,0 +1,42 @@
+{
+  "release": "FLAGSHIP_V4",
+  "version": "4.0.0",
+  "fab_model": {
+    "products": 2,
+    "route_operations": {
+      "P1": 14,
+      "P2": 14
+    },
+    "photo_visits": {
+      "P1": 3,
+      "P2": 3
+    }
+  },
+  "queue_time": {
+    "watched": 36,
+    "breach": 3,
+    "at_risk": 6
+  },
+  "maintenance": {
+    "assets": 19,
+    "due_24h": 2,
+    "execute_windows": 1
+  },
+  "yield": {
+    "mean_predicted_yield": 0.8847,
+    "rework_load_wafers": 38.4,
+    "engineering_holds": 5
+  },
+  "amhs": {
+    "vehicles": 8,
+    "edges": 9,
+    "congested_edges": 3,
+    "p95_transfer": 11.96
+  },
+  "experiment": {
+    "id": "EXP-31-70-30",
+    "missions": 5,
+    "worst_case": "PHOTO_OUTAGE"
+  },
+  "evidence_boundary": "Reference virtual-fab validation only; no production/site performance claim."
+}

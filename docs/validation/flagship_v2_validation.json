@@ -1,0 +1,78 @@
+{
+  "release": "FLAGSHIP_V2",
+  "production_validated": false,
+  "benchmark": {
+    "evidence_class": "REFERENCE_SYNTHETIC_BENCHMARK",
+    "replications": 20,
+    "lot_count": 12,
+    "seed": 17,
+    "paired_mean_improvement": 69.5654,
+    "dominance_rate": 1.0,
+    "rare_fab_mean_loss": 173.6329,
+    "baseline_mean_loss": 243.1982,
+    "rare_fab_cvar90": 182.703,
+    "baseline_cvar90": 251.6326,
+    "mean_runtime_s": 0.010612,
+    "falsification_pass": true,
+    "claim_boundary": "Synthetic benchmark mechanics only; not site performance or novelty proof."
+  },
+  "bay_risk": [
+    {
+      "bay": "PHOTO",
+      "wip": 18.0,
+      "utilization": 0.94,
+      "queue_age": 11.0,
+      "amhs_delay": 4.8,
+      "energy_stress": 0.8,
+      "maintenance_risk": 0.45,
+      "score": 1.1204,
+      "state": "CONSTRAINED"
+    },
+    {
+      "bay": "ETCH",
+      "wip": 11.0,
+      "utilization": 0.82,
+      "queue_age": 6.0,
+      "amhs_delay": 2.1,
+      "energy_stress": 0.5,
+      "maintenance_risk": 0.2,
+      "score": 0.6823,
+      "state": "WATCH"
+    },
+    {
+      "bay": "CMP",
+      "wip": 5.0,
+      "utilization": 0.55,
+      "queue_age": 2.0,
+      "amhs_delay": 0.8,
+      "energy_stress": 0.3,
+      "maintenance_risk": 0.15,
+      "score": 0.3627,
+      "state": "NOMINAL"
+    }
+  ],
+  "amhs": {
+    "completed": 30,
+    "mean_transfer_time": 17.3593,
+    "p95_transfer_time": 30.4,
+    "max_queue": 3,
+    "vehicle_utilization": 0.9383
+  },
+  "equipment": {
+    "tool_id": "PHOTO-03",
+    "availability": 0.8696,
+    "pm_urgency": 0.7083,
+    "setup_pressure": 0.75,
+    "qualification_coverage": 0.72,
+    "risk_score": 0.3903,
+    "recommended_action": "PROTECT_CAPACITY"
+  },
+  "yield": {
+    "predicted_yield": 0.7602,
+    "excursion_probability": 0.6457,
+    "expected_good_wafers": 19.01,
+    "rework_load": 2.1,
+    "disposition": "ENGINEERING_REVIEW"
+  },
+  "claim_boundary": "All generated values are reference synthetic benchmark evidence; no fab/site performance claim."
+}

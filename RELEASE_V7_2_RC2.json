@@ -1,0 +1,13 @@
+{
+  "release": "FLAGSHIP_V7_2",
+  "version": "7.2.0",
+  "stage": "PORTFOLIO_RC2",
+  "enterprise_hardening": [
+    "tamper_evident_decision_certificate",
+    "explicit_supervisor_authority",
+    "autonomous_execution_hard_block",
+    "existing_risk_neutral_ablation_and_sensitivity_validation"
+  ],
+  "evidence_boundary": "Synthetic/reference manufacturing evidence; no live fab or production-performance claim.",
+  "windows_revalidation_required": true
+}

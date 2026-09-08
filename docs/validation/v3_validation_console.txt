@@ -1,0 +1,63 @@
+{
+  "release": "FLAGSHIP_V3",
+  "production_validated": false,
+  "platform": {
+    "workspaces": 10,
+    "virtual_bays": 8,
+    "tool_assets": 19,
+    "reticles": 4,
+    "lot_rows_validated": 50,
+    "reentrant_links": 2
+  },
+  "mission_control": {
+    "kpis": {
+      "wip": 28.1,
+      "throughput": 90,
+      "cycle_time": 391.098,
+      "p95_cycle_time": 615.763,
+      "on_time_rate": 0.0333,
+      "tardiness": 247.676
+    },
+    "constrained_bays": [
+      "PHOTO",
+      "ETCH",
+      "MET",
+      "IMPLANT"
+    ],
+    "alerts": 4
+  },
+  "rolling_schedule": {
+    "success": true,
+    "jobs": 12,
+    "tardy_jobs": 0,
+    "runtime_s": 0.002224,
+    "tools_used": 7
+  },
+  "stress_mission": {
+    "scenario": "PHOTO_OUTAGE",
+    "severity": "CRITICAL",
+    "delta": {
+      "avg_cycle_time": 159.884,
+      "p95_cycle_time": 226.159,
+      "avg_tardiness": 158.676,
+      "on_time_rate": -0.0375,
+      "avg_wip": 4.567
+    },
+    "recommendation_count": 3
+  },
+  "decision_packet": {
+    "state": "REVIEW",
+    "severity": "CRITICAL",
+    "actions": 3,
+    "evidence_items": 3,
+    "human_gate": "FAB_SHIFT_SUPERVISOR"
+  },
+  "rare_fab": {
+    "replications": 20,
+    "dominance_rate": 1.0,
+    "rare_cvar90": 164.0779,
+    "baseline_cvar90": 234.6279,
+    "falsification_pass": true
+  },
+  "claim_boundary": "Reference virtual-fab evidence only. No live MES, site performance, novelty, autonomous execution, or realized-impact claim."
+}

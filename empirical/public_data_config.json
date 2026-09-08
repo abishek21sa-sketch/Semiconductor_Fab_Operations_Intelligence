@@ -1,0 +1,25 @@
+{
+  "ptype": "semiconductor",
+  "title": "Semiconductor Fab Operations Intelligence",
+  "dataset": "UCI SECOM",
+  "uci_id": 179,
+  "raw_dir": "uci_secom",
+  "primary_files": [
+    "features.csv",
+    "targets.csv"
+  ],
+  "static": [
+    [
+      "company_public/tsmc_2025_manufacturing_scale.csv",
+      "data/snapshots/tsmc_2025_manufacturing_scale.csv"
+    ]
+  ],
+  "algorithm": "QSHIFT-v1",
+  "case": "SECOM Yield Excursion / Queue-Risk Investigation",
+  "authority": "FAB_SHIFT_SUPERVISOR",
+  "claim": "SECOM is public UCI semiconductor process data; TSMC facts are company-level context only. Neither is TSMC lot-level operating data.",
+  "static_files": [
+    "data/snapshots/tsmc_2025_manufacturing_scale.csv"
+  ],
+  "model_version": "public-data-backbone-1.0"
+}

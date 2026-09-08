@@ -1,0 +1,10 @@
+scenario:
+  lots: 120
+  seed: 11
+  interarrival: 5.5
+  failure_rate: 0.03
+  repair_time: 10.0
+policy:
+  candidate_dispatch_rules: [FIFO, EDD, CR, PRIORITY]
+validation:
+  primary_metrics: [avg_cycle_time, avg_tardiness, on_time_rate, avg_wip, utilization]

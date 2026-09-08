@@ -1,0 +1,1 @@
+UCI SECOM archive parsed from secom.data and secom_labels.data; official source URL: https://archive.ics.uci.edu/static/public/179/secom.zip

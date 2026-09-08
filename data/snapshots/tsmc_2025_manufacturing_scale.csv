@@ -1,0 +1,9 @@
+year,metric,value,unit,source
+2025,annual_capacity_12in_equivalent,>17,million wafers,TSMC 2025 Annual Report / Fab Capacity
+2025,different_products_manufactured,12682,products,TSMC 2025 Annual Report
+2025,distinct_technologies,305,technologies,TSMC 2025 Annual Report
+2025,customers_served,534,customers,TSMC 2025 Annual Report
+2025,global_employees,>90000,employees,TSMC 2025 Annual Report
+2025,taiwan_12in_gigafabs,6,fabs,TSMC Fab Capacity
+2025,taiwan_8in_fabs,4,fabs,TSMC Fab Capacity
+2025,taiwan_6in_fabs,1,fab,TSMC Fab Capacity

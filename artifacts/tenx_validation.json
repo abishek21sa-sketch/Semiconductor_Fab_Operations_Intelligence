@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "runtime_ms": 9011.719,
+  "project": "Semiconductor Fab Operations Intelligence",
+  "ml_family": "Cox proportional-hazards survival learning",
+  "original_algorithm": "QSHIFT-v1",
+  "workspace_count": 35,
+  "human_authority": "FAB_SHIFT_SUPERVISOR",
+  "autonomous_execution": false,
+  "decision": {
+    "release_priority": "L-ETCH-17",
+    "ranking": [
+      "L-ETCH-17",
+      "L-PHOTO-08",
+      "L-DIFF-04"
+    ]
+  },
+  "counterfactual": {
+    "naive_policy": "earliest due slack",
+    "choice": "L-DIFF-04",
+    "disagrees": true
+  }
+}

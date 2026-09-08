@@ -1,0 +1,30 @@
+{
+  "audit_chain_head": "9e79368d22955f6687ca8919f54816ab295fd1e9a711fc62ba53fb0193610b3c",
+  "benchmark": {
+    "baseline_cvar90": 125.4466,
+    "baseline_mean_loss": 120.9667,
+    "claim_boundary": "Synthetic benchmark mechanics only; not site performance or novelty proof.",
+    "dominance_rate": 1.0,
+    "evidence_class": "REFERENCE_SYNTHETIC_BENCHMARK",
+    "falsification_pass": true,
+    "lot_count": 8,
+    "mean_runtime_s": 0.006182,
+    "paired_mean_improvement": 14.5708,
+    "rare_fab_cvar90": 110.6821,
+    "rare_fab_mean_loss": 106.3959,
+    "replications": 4,
+    "seed": 117
+  },
+  "certificate_sha256": "009adf88afd8c81226c036f3858cd5bed6dc52cbc714b37365d2f8b0ae4be9c9",
+  "checks": {
+    "certificate_human_gated": true,
+    "ledger_chain_valid_before_tamper": true,
+    "ledger_detects_tampering": true,
+    "rare_fab_benchmark_executes": true,
+    "reference_runtime_under_30s": true
+  },
+  "claim_boundary": "Local reference-operability evidence; not live-fab cybersecurity, MES validation, or production authorization.",
+  "phase": "ENTERPRISE_OPERABILITY_V1",
+  "runtime_seconds": 0.030107151999914095,
+  "status": "PASS"
+}

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "seeds": [
+    3,
+    7,
+    11,
+    19,
+    29
+  ],
+  "decision_path_passes": 5,
+  "naive_decision_changes": 5,
+  "rows": [
+    {
+      "seed": 3,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "release_priority": "L-ETCH-17",
+        "ranking": [
+          "L-ETCH-17",
+          "L-PHOTO-08",
+          "L-DIFF-04"
+        ]
+      }
+    },
+    {
+      "seed": 7,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "release_priority": "L-ETCH-17",
+        "ranking": [
+          "L-ETCH-17",
+          "L-PHOTO-08",
+          "L-DIFF-04"
+        ]
+      }
+    },
+    {
+      "seed": 11,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "release_priority": "L-ETCH-17",
+        "ranking": [
+          "L-ETCH-17",
+          "L-PHOTO-08",
+          "L-DIFF-04"
+        ]
+      }
+    },
+    {
+      "seed": 19,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "release_priority": "L-ETCH-17",
+        "ranking": [
+          "L-ETCH-17",
+          "L-PHOTO-08",
+          "L-DIFF-04"
+        ]
+      }
+    },
+    {
+      "seed": 29,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "release_priority": "L-ETCH-17",
+        "ranking": [
+          "L-ETCH-17",
+          "L-PHOTO-08",
+          "L-DIFF-04"
+        ]
+      }
+    }
+  ]
+}

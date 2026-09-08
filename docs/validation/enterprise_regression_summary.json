@@ -1,0 +1,15 @@
+{
+  "project": "Semiconductor Fab Operations Intelligence",
+  "release": "FLAGSHIP_V7_2_ENTERPRISE_RC3",
+  "phase": "ENTERPRISE_OPERABILITY_AND_DECISION_ASSURANCE",
+  "result": "PASS",
+  "passed": 93,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Full current Python regression suite",
+  "junit_evidence": [
+    "docs/validation/junit/semi.xml"
+  ],
+  "test_environment_boundary": "Container evidence is a pre-release gate. Target Windows enterprise acceptance remains mandatory."
+}

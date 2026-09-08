@@ -1,0 +1,28 @@
+{
+  "dataset": "UCI SECOM",
+  "case_study": "SECOM Yield Excursion / Queue-Risk Investigation",
+  "raw_directory": "data/raw/uci_secom",
+  "required_primary_files": [
+    "features.csv",
+    "targets.csv"
+  ],
+  "schema_policy": {
+    "numeric_missing_values": "allowed but must be profiled/imputed inside train-only pipeline",
+    "empty_file": "reject",
+    "hash": "SHA-256",
+    "source_mode": "explicit"
+  },
+  "decision_chain": [
+    "real observed data",
+    "derived diagnostics",
+    "predictive model",
+    "repository-authored original algorithm",
+    "OR/simulation escalation",
+    "analytical AI challenge",
+    "human approval/HOLD"
+  ],
+  "original_algorithm": "QSHIFT-v1",
+  "claim_boundary": "SECOM is public UCI semiconductor process data; TSMC facts are company-level context only. Neither is TSMC lot-level operating data.",
+  "human_authority": "FAB_SHIFT_SUPERVISOR",
+  "autonomous_execution": false
+}

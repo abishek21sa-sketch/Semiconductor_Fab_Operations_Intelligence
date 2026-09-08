@@ -1,0 +1,65 @@
+{
+  "dispatch_recommendation": {
+    "recommended_rule": "CR",
+    "rationale": [
+      "CR produced the lowest evaluated tardiness/cycle-time objective across 4 reproducible scenarios.",
+      "Versus FIFO: average tardiness 603.39 -> 424.02; average cycle time 744.81 -> 566.95."
+    ],
+    "evidence": {
+      "FIFO": {
+        "avg_tardiness": 603.39,
+        "avg_cycle_time": 744.806,
+        "on_time_rate": 0.025,
+        "avg_wip": 53.836
+      },
+      "EDD": {
+        "avg_tardiness": 447.662,
+        "avg_cycle_time": 588.63,
+        "on_time_rate": 0.0583,
+        "avg_wip": 40.755
+      },
+      "CR": {
+        "avg_tardiness": 424.025,
+        "avg_cycle_time": 566.953,
+        "on_time_rate": 0.0333,
+        "avg_wip": 40.063
+      },
+      "PRIORITY": {
+        "avg_tardiness": 434.017,
+        "avg_cycle_time": 564.572,
+        "on_time_rate": 0.2667,
+        "avg_wip": 39.965
+      }
+    },
+    "confidence": "simulation-backed"
+  },
+  "cycle_time_model": {
+    "metrics": {
+      "mae": 33.659,
+      "r2": 0.978,
+      "train_n": 90,
+      "test_n": 30
+    },
+    "feature_importance": {
+      "priority": 0.0015,
+      "release_time": 0.9775,
+      "due_window": 0.02,
+      "product_p2": 0.0009
+    }
+  },
+  "reference_run": {
+    "throughput": 120,
+    "avg_cycle_time": 588.63,
+    "avg_tardiness": 447.662,
+    "on_time_rate": 0.0583,
+    "avg_wip": 40.755,
+    "utilization": {
+      "LITHO-01": 0.7212,
+      "LITHO-02": 0.6566,
+      "ETCH-01": 0.8516,
+      "DIFF-01": 0.6474,
+      "DIFF-02": 0.5574,
+      "MET-01": 0.3081
+    }
+  }
+}
