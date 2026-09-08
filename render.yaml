@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: semiconductor-fab-operations-api
+    runtime: python
+    plan: free
+    buildCommand: pip install .
+    startCommand: uvicorn fabops.api.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      # Render's free filesystem is ephemeral. The API remains useful for
+      # demos while making the persistence boundary explicit.
+      - key: FABOPS_DB
+        value: /tmp/fabops_api.db
+      - key: FABOPS_AUDIT_LEDGER
+        value: /tmp/fabops_decision_audit.jsonl
+
