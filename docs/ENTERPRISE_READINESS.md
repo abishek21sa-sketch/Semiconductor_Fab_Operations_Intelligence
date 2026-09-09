@@ -2,7 +2,7 @@
 
 ## Release status
 
-**FLAGSHIP_V7_2_PORTFOLIO_RC2** is a portfolio release candidate, not a production deployment certification.
+**FLAGSHIP_V7_2_PORTFOLIO_RELEASE** is a portfolio release candidate, not a production deployment certification.
 
 ## Decision-system identity
 
@@ -20,7 +20,7 @@ Re-entrant fab control under queue-time, reticle, PM and disruption constraints 
 ## Evidence inventory
 
 - `docs/validation/portfolio_release_validation.json` — SHA-256 `2d5e2299d6eaba3d6443c38a88078f4ef0cdae792d69554a846dbd4d452e04cb`
-- `RELEASE_V7_2_RC2.json` — SHA-256 `0c4cb59e4857477220b826e0ecd52fc6745113b5929e1f399a5b8960a418381f`
+- `RELEASE_V7_2_VALIDATION.json` — SHA-256 `0c4cb59e4857477220b826e0ecd52fc6745113b5929e1f399a5b8960a418381f`
 
 ## Gates still required before any production claim
 

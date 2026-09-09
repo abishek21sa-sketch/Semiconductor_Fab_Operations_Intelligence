@@ -1,10 +1,8 @@
-## AIRLINES-1.5× DEPTH CANDIDATE
+# Semiconductor Fab Operations Intelligence
 
-Current release `SEMICONDUCTOR_FAB_FORTUNE50_AIRLINES15X_RC5` adds a live empirical/historical analysis layer, 26+ substantive workspaces, project-native domain diagnostics, external-source refresh/provenance, and AI decisions grounded in explicit evidence mode. See `docs/AIRLINES_15X_RELEASE.md`.
+## Production readiness
 
-# Fortune-50 TENX analytical release
-
-**Internal portfolio target:** Math 10/10 · UI 10/10 · AI 10/10, subject to the evidence boundaries below.
+Semiconductor Fab Operations Intelligence includes a live empirical and historical analysis layer, project-native domain diagnostics, external-source provenance, and AI decisions grounded in explicit evidence. See `docs/ENGINEERING_RELEASE.md`.
 
 - Repository-authored algorithm: **QSHIFT-v1**
 - Unique predictive-learning family: **Cox proportional-hazards survival learning**
@@ -27,7 +25,7 @@ The first command validates prediction → decision → counterfactual → OR es
 ---
 
 
-## Portfolio RC2 — governed decision certificates
+## Portfolio release — governed decision certificates
 
 The V7.2 decision center now emits tamper-evident SHA-256 decision certificates with explicit risk evidence, supervisor authority, human-gate state, and an autonomous-execution hard block. This adds release-level traceability without changing the underlying RARE-FAB optimization claims or evidence boundary.
 

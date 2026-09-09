@@ -15,4 +15,5 @@ services:
         value: /tmp/fabops_api.db
       - key: FABOPS_AUDIT_LEDGER
         value: /tmp/fabops_decision_audit.jsonl
-
+      - key: GEMINI_API_KEY
+        sync: false

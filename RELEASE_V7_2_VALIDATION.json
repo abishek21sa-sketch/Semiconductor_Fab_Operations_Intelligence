@@ -1,7 +1,7 @@
 {
   "release": "FLAGSHIP_V7_2",
   "version": "7.2.0",
-  "stage": "PORTFOLIO_RC2",
+  "stage": "PORTFOLIO_RELEASE",
   "enterprise_hardening": [
     "tamper_evident_decision_certificate",
     "explicit_supervisor_authority",
