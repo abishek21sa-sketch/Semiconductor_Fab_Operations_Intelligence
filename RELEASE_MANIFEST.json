@@ -21,8 +21,8 @@
       "sha256": "e7d27371d071a81d16f5a0ef66f307b6fb9740196a846ae85e820547b46551d6"
     },
     {
-      "path": "artifacts/airlines15x_validation.json",
-      "sha256": "bbf4522a592d7f9fed4b62e139da27534240779132de1cbead2ccd3e7f4f38c7"
+      "path": "artifacts/empirical_validation.json",
+      "sha256": "948e9e68ef57909b831b46ebafdf2c92eb2bb62f5513056eb455220869510af6"
     },
     {
       "path": "artifacts/final_depth_validation.json",
@@ -38,7 +38,7 @@
     },
     {
       "path": "artifacts/frontend_diversity.json",
-      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
+      "sha256": "0c545f24a43a027935d96eb793d1ec6c7b295ce9c71919e6eb349112511aab6c"
     },
     {
       "path": "artifacts/governance_standard_validation.json",
@@ -66,7 +66,7 @@
     },
     {
       "path": "src/fabops/api/app.py",
-      "sha256": "f7cd98f77a71e6a41c15895538577da7694ed2d01dc5ecdf26bb27095b9c5c1a"
+      "sha256": "2d8394be80242d8bb9dcc6d4fdbbc1bcd54b7e2f099980b337ba3cad0e90d956"
     }
   ],
   "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",

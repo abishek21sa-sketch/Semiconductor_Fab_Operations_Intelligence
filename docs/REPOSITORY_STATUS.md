@@ -1,10 +1,10 @@
-# Repository Status — Flagship V7.2 Portfolio RC1
+# Repository Status — Flagship V7.2 Portfolio release
 
 ## Current release
 
 - **Application version:** 7.2.0
 - **Release:** `FLAGSHIP_V7_2`
-- **Recovery stage:** `PORTFOLIO_RC1`
+- **Recovery stage:** `PORTFOLIO_RELEASE`
 - **Primary local target:** Windows
 - **Production/site validated:** No
 

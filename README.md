@@ -1,10 +1,8 @@
-## AIRLINES-1.5× DEPTH CANDIDATE
+# Semiconductor Fab Operations Intelligence
 
-Current release `SEMICONDUCTOR_FAB_FORTUNE50_AIRLINES15X_RC5` adds a live empirical/historical analysis layer, 26+ substantive workspaces, project-native domain diagnostics, external-source refresh/provenance, and AI decisions grounded in explicit evidence mode. See `docs/AIRLINES_15X_RELEASE.md`.
+## Production readiness
 
-# Fortune-50 TENX analytical release
-
-**Internal portfolio target:** Math 10/10 · UI 10/10 · AI 10/10, subject to the evidence boundaries below.
+Semiconductor Fab Operations Intelligence includes a live empirical and historical analysis layer, project-native domain diagnostics, external-source provenance, and AI decisions grounded in explicit evidence. See `docs/ENGINEERING_RELEASE.md`.
 
 - Repository-authored algorithm: **QSHIFT-v1**
 - Unique predictive-learning family: **Cox proportional-hazards survival learning**
@@ -27,7 +25,7 @@ The first command validates prediction → decision → counterfactual → OR es
 ---
 
 
-## Portfolio RC2 — governed decision certificates
+## Portfolio release — governed decision certificates
 
 The V7.2 decision center now emits tamper-evident SHA-256 decision certificates with explicit risk evidence, supervisor authority, human-gate state, and an autonomous-execution hard block. This adds release-level traceability without changing the underlying RARE-FAB optimization claims or evidence boundary.
 
@@ -249,3 +247,11 @@ Set-ExecutionPolicy -Scope Process Bypass
 This release contains a structured public-data layer under `data/raw`, `data/processed`, `data/contracts`, `data/dictionaries`, `data/provenance`, and `data/snapshots`. Run `scripts\fetch_public_data_windows.ps1` when the primary public dataset is not bundled, then run `scripts\windows_real_data_acceptance.ps1`. `artifacts/data_backbone_status.json` records source state, row/feature counts, missingness, SHA-256, validation status, case-study state, claim boundary, model version, and the human decision authority.
 
 The public-data case is `SECOM Yield Excursion / Queue-Risk Investigation` and is wired into `QSHIFT-v1` review. Missing external raw data never silently falls back to a real-data claim; the dossier explicitly enters `REFERENCE_MODE_HOLD_FOR_REAL_DATA_CLAIM`.
+## Deployment
+
+Deploy `frontend/` as a static Vercel project. It calls the Render API defined
+in the root `render.yaml`; the default public URL is
+`https://semiconductor-fab-operations-api.onrender.com`. For a preview or
+local environment, set `window.__FABOPS_API_BASE__` before the application
+script loads. Deploy the root as a Render Blueprint and verify `/health`
+before opening the Vercel URL.

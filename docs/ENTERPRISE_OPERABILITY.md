@@ -1,8 +1,8 @@
 # Enterprise Operability & Decision Assurance
 
-**Release:** `FLAGSHIP_V7_2_ENTERPRISE_RC3`  
-**Phase:** Enterprise operability and decision assurance  
-**Primary target:** Windows  
+**Release:** `FLAGSHIP_V7_2_ENTERPRISE_RELEASE`
+**Phase:** Enterprise operability and decision assurance
+**Primary target:** Windows
 
 ## Decision authority
 

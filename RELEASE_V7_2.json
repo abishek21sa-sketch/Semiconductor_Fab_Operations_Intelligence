@@ -1,7 +1,7 @@
 {
   "release": "FLAGSHIP_V7_2",
   "version": "7.2.0",
-  "stage": "PORTFOLIO_RC1",
+  "stage": "PORTFOLIO_RELEASE",
   "container_regression": {
     "tests": 89,
     "status": "PASS",
