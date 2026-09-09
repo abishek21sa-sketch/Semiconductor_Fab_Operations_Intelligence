@@ -1,4 +1,5 @@
 from __future__ import annotations
+import traceback
 from dataclasses import dataclass, asdict
 import numpy as np
 from scipy.optimize import milp, Bounds, LinearConstraint
@@ -174,6 +175,9 @@ def optimize_multi_operation(jobs:list[dict]|None=None,horizon:int=96,seed:int=1
         # HiGHS may fail before returning a result when a large sparse model
         # cannot be allocated. Treat that as a solver-status event so the
         # constraint-checked deterministic fallback still protects the API.
+        # Print the traceback (not just the message) so solver failures are
+        # diagnosable from server logs, not only from the returned message.
+        traceback.print_exc()
         res=None
         solver_message=f"solver exception: {type(exc).__name__}: {exc}"
     if res is None or not res.success:
