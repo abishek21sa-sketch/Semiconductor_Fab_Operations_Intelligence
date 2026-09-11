@@ -26,3 +26,6 @@ where = ["src"]
 pythonpath = ["src", "."]
 testpaths = ["tests"]
 addopts = "-q"
+
+[tool.vercel]
+entrypoint = "src.fabops.api.app:app"
